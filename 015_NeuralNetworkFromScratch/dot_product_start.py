@@ -6,3 +6,6 @@ w1 = [2, 3]
 w2 = [0.4, 1.8]
 
 # %% Question: which weight is more similar to input data X
+print(np.dot(X,w1))
+print(np.dot(X,w2))
+# %%
