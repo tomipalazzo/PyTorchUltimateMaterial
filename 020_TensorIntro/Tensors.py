@@ -30,10 +30,14 @@ sns.lineplot(x = x_range, y = y_range)
 # %% define y as function of x
 y = (x-3) * (x-6) * (x-4)
 print(y)
-# %%
+# %% Gradien in x=2
+y.backward()
+print(x.grad)
+
+
 
 # %% x -> y
-# create a tensor with gradients enabled
+# create a tensor with gradients   
 x = torch.tensor(1.0, requires_grad=True)
 # create second tensor depending on first tensor
 y = (x-3) * (x-6) * (x-4)
